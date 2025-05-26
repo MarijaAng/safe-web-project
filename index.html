@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <header class="header transparent__navbar">
+      <nav class="navbar">
+        <a href="#home" class="nav__logo"
+          ><img src="./images/purple-logo.png" alt="Page logo"
+        /></a>
+        <div class="navbar__links">
+          <ul class="nav__menu left__menu">
+            <li class="nav__item">
+              <a href="#inform" class="nav__link">Информирај се</a>
+            </li>
+            <li class="nav__item">
+              <a href="#discussion" class="nav__link">Дискусии</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">Контакт</a>
+            </li>
+            <li class="nav__item" id="profile__link">
+              <a href="#profile" class="nav__link">Профил</a>
+            </li>
+          </ul>
+          <ul class="nav__menu right__menu">
+            <li class="nav__item" id="login__link">
+              <a href="#login" class="nav__link login__button"
+                ><i class="fa-solid fa-user"></i> Најави се</a
+              >
+            </li>
+            <li class="nav__item user__image" id="loggedInUser">
+              <img src="" alt="User Image" />
+            </li>
+            <li class="nav__item nav__link">MK|AL</li>
+            <li class="nav__item nav__link">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </li>
+          </ul>
+        </div>
+
+        <div class="hamburger">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home">
+        <div class="banner">
+          <div class="banner__background">
+            <div class="play__button">
+              <i class="fa-solid fa-circle-play"></i>
+            </div>
+            <video muted>
+              <source src="./videos/project2.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+        <div class="home__section--cards">
+          <div class="container__80 section__padding">
+            <h1 class="titles__font">Информирај се и заштити се</h1>
+            <div class="home__cards">
+              <!-- Card 1 -->
+              <div class="home__card--parent">
+                <div
+                  class="home__card--inner border__radius purple__background"
+                >
+                  <div class="home__card--title">
+                    <h2>Научи сè што треба да знаеш</h2>
+                    <img
+                      src="./images/mdi_eye-lock-outline.png"
+                      alt="eye-lock"
+                    />
+                  </div>
+                  <div class="home__card--content">
+                    <p>
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Praesentium dolores exercitationem nam ut commodi tempore
+                      voluptatem quidem. Incidunt dicta, facere, at minus
+                      perspiciatis, cupiditate in aliquid impedit repellendus
+                      maiores quia quasi neque. Unde, itaque? Similique fugit
+                      ipsam voluptatibus vitae optio?
+                    </p>
+                    <a class="home__card--button purple__background">
+                      Дознај повеќе
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- Card 2 -->
+              <div class="home__card--parent">
+                <div class="home__card--inner border__radius blue__background">
+                  <div class="home__card--title">
+                    <h2>Вклучи сè во дискусија</h2>
+                    <img
+                      src="./images/mdi_encryption-check.png"
+                      alt="encryption-check"
+                    />
+                  </div>
+                  <div class="home__card--content">
+                    <p>
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Praesentium dolores exercitationem nam ut commodi tempore
+                      voluptatem quidem. Incidunt dicta, facere, at minus
+                      perspiciatis, cupiditate in aliquid impedit repellendus
+                      maiores quia quasi neque. Unde, itaque? Similique fugit
+                      ipsam voluptatibus vitae optio?
+                    </p>
+                    <a class="home__card--button blue__background">
+                      Дознај повеќе
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- Card 3 -->
+              <div class="home__card--parent">
+                <div class="home__card--inner border__radius green__background">
+                  <div class="home__card--title">
+                    <h2>Следи го својот напредок</h2>
+                    <img
+                      src="./images/mdi_user-access-control.png"
+                      alt="user-access-control"
+                    />
+                  </div>
+                  <div class="home__card--content">
+                    <p>
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Praesentium dolores exercitationem nam ut commodi tempore
+                      voluptatem quidem. Incidunt dicta, facere, at minus
+                      perspiciatis, cupiditate in aliquid impedit repellendus
+                      maiores quia quasi neque. Unde, itaque? Similique fugit
+                      ipsam voluptatibus vitae optio?
+                    </p>
+                    <a class="home__card--button green__background">
+                      Дознај повеќе
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="inform">
+        <div class="container__80 section__padding">
+          <h1 class="titles__font">Сè што треба да знаеш</h1>
+          <div class="inform__links">
+            <div class="prev-link">
+              <i class="fa-solid fa-left-long fa-xl"></i>
+            </div>
+            <p class="">Видеа</p>
+            <p class="inactive__link">Упатства</p>
+            <p class="inactive__link">Статии</p>
+            <div class="next-link">
+              <i class="fa-solid fa-right-long fa-xl"></i>
+            </div>
+          </div>
+          <div class="navigation-dots">
+            <i class="fa-solid fa-circle"></i>
+            <i class="fa-solid fa-circle"></i>
+            <i class="fa-solid fa-circle"></i>
+          </div>
+          <div class="inform__filterButtons">
+            <button
+              class="border__radius active__filter"
+              id="most__watched--filter"
+              data-category="most__watched"
+            >
+              Најгледани
+            </button>
+            <button
+              class="border__radius active__filter"
+              id="newest__filter"
+              data-category="newest"
+            >
+              Најнови
+            </button>
+            <button
+              class="border__radius active__filter"
+              id="danger__filter"
+              data-category="danger"
+            >
+              Опасност
+            </button>
+          </div>
+          <div class="inform__cards section__padding"></div>
+          <button class="loadMore__button" id="cards__loadMore--Button">
+            <i class="fa-solid fa-plus"></i> Види повеќе
+          </button>
+          <!-- Inform card modal -->
+          <div class="modal" id="inform__modal">
+            <div class="modal__content border__radius">
+              <div class="modal__body">
+                <div class="modal__text--section"></div>
+                <div>
+                  <!-- Input card -->
+                  <div class="modal__card border__radius">
+                    <div class="modal__card--comment">
+                      <input type="text" placeholder="Остави коментар..." />
+                      <div class="user__profile">
+                        <div class="user__image">
+                          <img src="./images/user.png" alt="User" />
+                        </div>
+                        <p class="user__username">Име Презиме</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Comment 1 -->
+                  <div class="modal__card border__radius">
+                    <div class="modal__card--comment">
+                      <p>
+                        Лорем ипсум е едноставен модел на текст кој се користел
+                        во печатарската индустрија. Лорем ипсум бил индустриски
+                        стандард кој се користел како модел уште пред 1500
+                        години, кога непознат печатар зел кутија со букви и ги
+                        сложил на таков начин за да направи примерок на книга.
+                      </p>
+                      <div class="modal__card--user">
+                        <div class="user__profile">
+                          <div class="modal__comment--image">
+                            <img src="./images/user1.png" alt="User Image" />
+                          </div>
+                          <p>Име Презиме</p>
+                        </div>
+                        <p>00/00/00, 00:00</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Comment 2 -->
+                  <div class="modal__card border__radius">
+                    <div class="modal__card--comment">
+                      <p>
+                        Лорем ипсум е едноставен модел на текст кој се користел
+                        во печатарската индустрија. Лорем ипсум бил индустриски
+                        стандард кој се користел како модел уште пред 1500
+                        години, кога непознат печатар зел кутија со букви и ги
+                        сложил на таков начин за да направи примерок на книга.
+                      </p>
+                      <div class="modal__card--user">
+                        <div class="user__profile">
+                          <div class="modal__comment--image">
+                            <img src="./images/user2.png" alt="User Image" />
+                          </div>
+                          <p>Име Презиме</p>
+                        </div>
+                        <p>00/00/00, 00:00</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Comment 3 -->
+                  <div class="modal__card border__radius">
+                    <div class="modal__card--comment">
+                      <p>
+                        Лорем ипсум е едноставен модел на текст кој се користел
+                        во печатарската индустрија. Лорем ипсум бил индустриски
+                        стандард кој се користел како модел уште пред 1500
+                        години, кога непознат печатар зел кутија со букви и ги
+                        сложил на таков начин за да направи примерок на книга.
+                      </p>
+                      <div class="modal__card--user">
+                        <div class="user__profile">
+                          <div class="modal__comment--image">
+                            <img src="./images/user3.png" alt="User Image" />
+                          </div>
+                          <p>Име Презиме</p>
+                        </div>
+                        <p>00/00/00, 00:00</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal__media">
+                <div class="play__button">
+                  <i class="fa-solid fa-circle-play"></i>
+                </div>
+                <video muted>
+                  <source src="./videos/project2.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="discussion">
+        <div class="container__80 section__padding">
+          <h1 class="titles__font">Табла за дискусии</h1>
+          <div class="discussion__wrapper">
+            <div id="discussion__container">
+              <form id="discussion__form">
+                <textarea
+                  name="discussion-content"
+                  id="discussion-content"
+                  placeholder="Сподели искуство..."
+                  required
+                ></textarea>
+                <div class="user__info">
+                  <div class="user__profile">
+                    <div class="user__image">
+                      <img src="" alt="User Image" />
+                    </div>
+                    <p class="user__username"></p>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="fade-overlay"></div>
+          </div>
+          <button
+            class="loadMore__button discussion__button"
+            id="discussion__loadMore--button"
+          >
+            <i class="fa-solid fa-plus"></i> Види повеќе
+          </button>
+        </div>
+      </section>
+
+      <section id="contact">
+        <div class="container__80 section__padding">
+          <h1 class="titles__font">Контакт</h1>
+          <div class="contact__group">
+            <h2>Побарај стручна помош</h2>
+            <div class="contact__card">
+              <div class="contact__card--inner">
+                <h4>Агенција за заштита на личните податоци</h4>
+                <p>
+                  Лорем ипсум е едноставен модел на текст кој се користел во
+                  печатарската индустрија. Лорем ипсум бил индустриски стандард
+                  кој се користел како модел уште пред 1500 години, кога
+                  непознат печатар зел кутија со букви и ги сложил на таков
+                  начин за да направи примерок на книга.
+                </p>
+              </div>
+              <div class="contact__card--button">
+                <button>Линк</button>
+              </div>
+            </div>
+          </div>
+          <div class="contact__group">
+            <h2>Невладини организации</h2>
+            <div class="contact__card">
+              <div class="contact__card--inner">
+                <h4>NGO 1</h4>
+                <p>
+                  Лорем ипсум е едноставен модел на текст кој се користел во
+                  печатарската индустрија. Лорем ипсум бил индустриски стандард
+                  кој се користел како модел уште пред 1500 години, кога
+                  непознат печатар зел кутија со букви и ги сложил на таков
+                  начин за да направи примерок на книга.
+                </p>
+              </div>
+              <div class="contact__card--button">
+                <button>Линк</button>
+              </div>
+            </div>
+            <div class="contact__card">
+              <div class="contact__card--inner">
+                <h4>NGO 2</h4>
+                <p>
+                  Лорем ипсум е едноставен модел на текст кој се користел во
+                  печатарската индустрија. Лорем ипсум бил индустриски стандард
+                  кој се користел како модел уште пред 1500 години, кога
+                  непознат печатар зел кутија со букви и ги сложил на таков
+                  начин за да направи примерок на книга.
+                </p>
+              </div>
+              <div class="contact__card--button">
+                <button>Линк</button>
+              </div>
+            </div>
+            <div class="contact__card">
+              <div class="contact__card--inner">
+                <h4>NGO 3</h4>
+                <p>
+                  Лорем ипсум е едноставен модел на текст кој се користел во
+                  печатарската индустрија. Лорем ипсум бил индустриски стандард
+                  кој се користел како модел уште пред 1500 години, кога
+                  непознат печатар зел кутија со букви и ги сложил на таков
+                  начин за да направи примерок на книга.
+                </p>
+              </div>
+              <div class="contact__card--button">
+                <button>Линк</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="profile">
+        <div class="container__80 section__padding">
+          <h1 class="titles__font">Профил</h1>
+          <div class="profile__info">
+            <div class="profile__image">
+              <img src="" alt="Profile Picture" />
+              <button class="edit__button edit__image">Промени</button>
+            </div>
+            <form id="profile__form">
+              <div class="profile__form--group">
+                <label for="user-fullname"
+                  >Име и презиме / Корисничко име</label
+                >
+                <div class="profile__form--input">
+                  <input
+                    type="text"
+                    name="user-fullname"
+                    id="user-fullname"
+                    disabled
+                    required
+                  />
+                </div>
+                <label for="user-email">Email адреса</label>
+                <div class="profile__form--input">
+                  <input
+                    type="text"
+                    name="user-email"
+                    id="user-email"
+                    disabled
+                    required
+                  />
+                </div>
+                <label for="user-password">Лозинка</label>
+                <div class="profile__form--input">
+                  <input
+                    type="password"
+                    name="user-password"
+                    id="user-password"
+                    disabled
+                    required
+                  />
+                </div>
+              </div>
+              <div class="profile__form--group">
+                <label for="user-birthYear">Година на раѓање</label>
+                <div class="profile__form--input">
+                  <input
+                    type="number"
+                    name="user-birthYear"
+                    id="user-birthYear"
+                    disabled
+                    required
+                  />
+                </div>
+                <label for="user-gender">Пол</label>
+                <div class="profile__form--input">
+                  <input
+                    type="text"
+                    name="user-gender"
+                    id="user-gender"
+                    disabled
+                    required
+                  />
+                </div>
+                <div class="logoutOrEdit">
+                  <button class="edit__button edit__all">Промени</button>
+                  <button id="logout__button">Одјави се</button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="profile__progress section__padding">
+            <div class="profile__progres--title">
+              <h4>Следи го својот Safeblink напредок!</h4>
+              <p>Моментално ниво: Лорем ипсум</p>
+            </div>
+            <div class="progress__bar">
+              <div class="progress__bar--inner"></div>
+            </div>
+          </div>
+          <div class="profile__badges">
+            <div class="profile__badge--parent">
+              <div class="profile__badge--inner">
+                <i class="fa-solid fa-hand-fist"></i>
+                <p>Се придружи!</p>
+              </div>
+            </div>
+            <div class="profile__badge--parent">
+              <div class="profile__badge--inner">
+                <i class="fa-solid fa-video"></i>
+                <p>Изгледани 10 видеа</p>
+              </div>
+            </div>
+            <div class="profile__badge--parent">
+              <div class="profile__badge--inner">
+                <i class="fa-solid fa-eye fa-flip-horizontal"></i>
+                <p>Изгледани 20 видеа</p>
+              </div>
+            </div>
+            <div class="profile__badge--parent">
+              <div class="profile__badge--inner">
+                <i class="fa-solid fa-shield-heart"></i>
+                <p>Изгледани 50 видеа</p>
+              </div>
+            </div>
+            <div class="profile__badge--parent">
+              <div class="profile__badge--inner">
+                <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                <p>Активност во дискусија</p>
+              </div>
+            </div>
+            <div class="profile__badge--parent">
+              <div class="profile__badge--inner">
+                <i class="fa-solid fa-trophy"></i>
+                <p>Прочитани 20 статии</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="login">
+        <div class="container__80 section__padding">
+          <h1 class="titles__font">Придружи ни се</h1>
+          <div class="login__content">
+            <form id="login__form">
+              <div class="socialMedia__login">
+                <a href="#" class="btn"
+                  ><i class="fa-brands fa-google"></i> Продолжи со Google</a
+                >
+                <a href="#" class="btn"
+                  ><i class="fa-brands fa-apple"></i> Продолжи со Apple</a
+                >
+                <a href="#" class="btn"
+                  ><i class="fa-brands fa-tiktok"></i> Продолжи со TikTok</a
+                >
+              </div>
+              <div class="login__divider">или</div>
+              <div class="manually__login">
+                <div class="user__input">
+                  <label for="username">Корисничко име*</label>
+                  <input
+                    type="text"
+                    id="username"
+                    name="username"
+                    placeholder="Username"
+                  />
+                  <span
+                    id="username__validation"
+                    class="validation__message"
+                  ></span>
+                </div>
+                <div class="user__input">
+                  <label for="password">Лозинка*</label>
+                  <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    placeholder="Password"
+                  />
+                  <span class="password__icon">
+                    <i class="fa-regular fa-eye-slash"></i>
+                  </span>
+                  <span
+                    id="password__validation"
+                    class="validation__message"
+                  ></span>
+                </div>
+                <div class="rememberMe">
+                  <p><i class="fa-regular fa-square-check"></i> Запомни ме</p>
+                  <p>Ја заборави лозинката?</p>
+                </div>
+              </div>
+              <button type="submit" class="loginPage__btn">Најави се</button>
+            </form>
+            <div class="login__image">
+              <img src="./images/login.png" alt="Login image" />
+            </div>
+          </div>
+        </div>
+        <div class="welcome__modal">
+          <div class="welcome__modal--content border__radius">
+            <h2>Добредојде!</h2>
+            <h4>Успешно креиран профил</h4>
+            <button class="loginPage__btn" id="login__modal--btn">
+              Продолжи кон Safeblink
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer__inner container__80">
+        <div class="contact__footer">
+          <img src="./images/white-logo.png" alt="Safeblink logo" />
+          <p>International Foundation for Electoral Systems (IFES)</p>
+          <div class="contact__footer--info">
+            <p><i class="fa-solid fa-phone"></i> +389-2-312-2288</p>
+            <p><i class="fa-solid fa-envelope"></i> ifes.nmk.ifes.org</p>
+          </div>
+        </div>
+        <div class="menu__footer">
+          <a href="#inform">Информирај се</a>
+          <a href="#discussion">Дискусии</a>
+          <a href="#contact">Контакт - корисни линкови</a>
+          <a href="#">Закон за заштита на личните податоци</a>
+        </div>
+        <div class="socialMedia__footer">
+          <p style="font-weight: 700" class="page__translate">MK | AL</p>
+          <div>
+            <a href="https://www.facebook.com/"
+              ><i class="fa-brands fa-square-facebook"></i
+            ></a>
+            <a href="https://www.instagram.com/accounts/login/?hl=en"
+              ><i class="fa-brands fa-square-instagram"></i
+            ></a>
+            <a href="https://www.youtube.com/"
+              ><i class="fa-brands fa-youtube"></i
+            ></a>
+            <a href="https://www.tiktok.com/en/"
+              ><i class="fa-brands fa-tiktok"></i
+            ></a>
+          </div>
+          <p>&copy; All Rights Reserved. | safeblink.mk</p>
+        </div>
+      </div>
+    </footer>
+    <script src="./index.js" type="module"></script>
+  </body>
+</html>
